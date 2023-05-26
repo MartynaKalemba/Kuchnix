@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Recipe</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      .bg-image {
+        background: url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80")
+          no-repeat center center fixed;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .container {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-image">
+      <div class="overlay"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <!-- Add more ingredients as needed -->
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Process</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            venenatis lectus eu mauris fermentum pulvinar. Suspendisse
+            scelerisque consequat lacinia. In fringilla nulla a lacus
+            consectetur, at placerat ipsum mollis. Suspendisse commodo lacus
+            eget tortor fringilla euismod. Suspendisse potenti. Fusce efficitur
+            dapibus est, eu dapibus est semper id. Nam rutrum dapibus sem, eu
+            blandit nulla aliquet at.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mt-5">
+          <button type="button" class="btn btn-dark mx-2">Prev</button>
+          <button type="button" class="btn btn-dark mx-2">Delete</button>
+          <button type="button" class="btn btn-dark mx-2">Select</button>
+          <button type="button" class="btn btn-dark mx-2">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

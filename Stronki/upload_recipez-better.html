@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Dynamic Grid Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      .padd {
+        padding: 50px;
+      }
+
+      .photo-upload {
+        border: 2px dashed #000;
+        height: 200px;
+        padding: 100px;
+      }
+      .big-button {
+        width: 100%;
+        height: 100px;
+        font-size: 24px;
+        color: #f8f9fa;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Content for first container row -->
+          <a href="#" onclick="goBack()" class="btn btn-primary">&larr; Back</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 padd">
+          <h1>Upload a Photo</h1>
+          <div class="photo-upload">
+            <form>
+              <div class="form-group">
+                <input type="file" class="form-control-file" id="photoUpload" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 padd">
+          <h1>Upload a Ingredients list</h1>
+          <div class="photo-upload">
+            <form>
+              <div class="form-group">
+                <input type="file" class="form-control-file" id="photoUpload" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 container-fluid">
+          <button type="button" class="btn btn-dark big-button mb-3">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

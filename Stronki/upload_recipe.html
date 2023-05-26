@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <title>Recipe Page</title>
+    <style>
+      .container {
+        margin-top: 20px;
+      }
+
+      .ingredient-list {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      @media (min-width: 576px) {
+        .ingredient-list {
+          float: right;
+          width: 250px;
+          margin-left: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#" onclick="goBack()" class="btn btn-primary">&larr; Back</a>
+        </div>
+        <div class="col-md-4">
+          <h1>Upload a Photo</h1>
+          <form>
+            <div class="form-group">
+              <input type="file" class="form-control-file" id="photoUpload" />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <div class="ingredient-list">
+            <h2>List of Ingredients</h2>
+            <ul id="ingredientList"></ul>
+          </div>
+          <button type="button" class="btn btn-dark" onclick="uploadPhoto()">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+
+      function uploadPhoto() {
+        var file = document.getElementById("photoUpload").files[0];
+        // Perform your upload logic here
+      }
+
+      function addIngredient() {
+        var ingredient = prompt("Enter an ingredient:");
+        if (ingredient) {
+          var ingredientList = document.getElementById("ingredientList");
+          var listItem = document.createElement("li");
+          listItem.appendChild(document.createTextNode(ingredient));
+          ingredientList.appendChild(listItem);
+        }
+      }
+    </script>
+  </body>
+</html>

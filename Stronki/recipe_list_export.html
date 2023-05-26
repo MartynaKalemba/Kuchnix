@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Export</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container-div {
+        background-color: rgba(212, 212, 212, 0.35);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .recipe-segment {
+        display: flex;
+        align-items: center;
+        background-color: rgba(212, 212, 212, 0.35);
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .recipe-image {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin-right: 10px;
+        border-radius: 1000px;
+      }
+      .recipe-segment:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-div center">
+        <div class="recipe-segment">
+          <img
+            class="recipe-image"
+            src="https://www.eatingwell.com/thmb/vFO43UyAy2NBfjOG6wADLLCE-Kc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cucumber-sandwich-eddcc95811f5426094ea5dbea6a6b026.jpg"
+            alt="Recipe 1"
+          />
+          <h2><span>recipe 1</span></h2>
+        </div>
+        <div class="recipe-segment">
+          <img
+            class="recipe-image"
+            src="https://www.bibbyskitchenat36.com/wp-content/uploads/2021/01/DSC_9104-1.jpg"
+            alt="Recipe 2"
+          />
+          <h2><span>recipe 2</span></h2>
+        </div>
+        <div class="recipe-segment">
+          <img
+            class="recipe-image"
+            src="https://www.howtocook.recipes/wp-content/uploads/2021/05/Ratatouille-recipe-500x500.jpg"
+            alt="Recipe 3"
+          />
+          <h2><span>recipe 3</span></h2>
+        </div>
+        <!-- Add more cake segments as needed -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mt-5">
+          <button type="button" class="btn btn-dark mx-2">Add Recipe</button>
+          <button type="button" class="btn btn-dark mx-2">Export</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
